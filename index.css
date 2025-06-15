@@ -801,107 +801,146 @@ footer .footer-text {
         background-color:  rgb(29, 29, 30);
        
     } */
-    .contactSection {
-        margin: 5vw 5vw;
-    }
+     .contactSection {
+    padding: 5vw;
+    background-color: #121212; /* Optional background */
+    color: white;
+    box-sizing: border-box;
+}
+
+.contactSection h1 {
+    padding: 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+    color: skyblue;
+}
+
+.contactSection p {
+    padding: 0.5rem 2rem;
+    color: grey;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* Grid for cards */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: rgb(29, 29, 30);
+    color: skyblue;
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+    background-color: rgb(39, 39, 40);
+    transform: translateY(-5px);
+}
+
+/* Flexbox layout for image + content */
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-img {
+    flex: 1 1 300px;
+    max-width: 500px;
+    float: right;
+    margin-right: 10%;
     
-    .contactSection h1 {
-        padding: 1.5rem 1rem;
-        font-size: 2.5rem;
-        text-align: center;
-    }
+}
+
+.contact-img img {
+    width: 100%;
+    border-radius: 10px;
+    float: right;
+}
+
+/* Contact content */
+.contact {
+    flex: 1 1 300px;
+    max-width: 600px;
+    color: white;
+    margin-left: 10%;
+}
+
+.contact-me {
+    font-size: 2.5rem;
+    color: skyblue;
+    margin: 1rem 0;
+}
+
+.contact-text {
+    font-size: 2rem;
+    color: grey;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
     
-    .contactSection p {
-        padding: 0.5rem 2rem;
-        color: grey;
-        font-size: 1.1rem;
-        text-align: center;
-    }
-    
-    .contactSection .cards-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-        padding: 2rem;
-    }
-    
-    .contactSection .cards-container .card {
-        color: skyblue;
-        background-color: rgb(29, 29, 30);
-        padding: 1.5rem;
-        border-radius: 10px;
-        transition: transform 0.3s ease, background-color 0.3s ease;
-    }
-    
-    .contactSection .cards-container .card:hover {
-        background-color: rgb(39, 39, 40);
-        transform: translateY(-5px);
-    }
-    .contact-img {
-        width: 40%;
-        padding-right: 5%;
-        box-sizing: border-box;
-    }
-    
-    .contact-img img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        border-radius: 10px;
-    }
-    .contact{
-        float: right;
-        margin: -450px 180px;
-    }
-    .contact-text{ 
-        color: grey;
-        font-size: 2rem;
-        margin: 20px -0px;
-        padding: 20px 0px;
-        font-weight: 200px;
-        letter-spacing: 3px;
-    }
+}
+
+.contact-desc {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.contact-desc b {
+    color: skyblue;
+    font-size: 1.4rem;
+}
+
+.contact ul {
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    list-style: circle;
+}
+
+.contact ul li {
+    padding: 8px 0;
+    line-height: 1.6;
+}
+
+.contact ul li b {
+    color: skyblue;
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+
+.contact ul li b a,
+.contact a {
+    color: skyblue;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: white;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
     .contact-me {
-        font-size: 2.5rem;
-        color: skyblue;
-        line-height: 1.3;
-        margin: 20px 0;
+        font-size: 2rem;
     }
-    
+    .contact-text {
+        font-size: 1.5rem;
+    }
     .contact-desc {
-        font-size: 1.2rem;
-        line-height: 1.6;
-        margin-bottom: 20px;
+        font-size: 1rem;
     }
-    
-    .contact-desc b {
-        color: skyblue;
-        font-size: 1.4rem;
-    }
-    
     .contact ul {
-        font-size: 1.2rem;
-        padding: 0;
-        list-style: circle;
+        font-size: 1rem;
     }
-    
-    .contact ul li {
-        padding: 8px 0;
-        line-height: 1.6;
-    }
-    
-    .contact ul li b  {
-        color: skyblue;
-        font-size: 1.3rem;
-        margin-right: 10px;
-    }
-    .contact ul li b a{
-        color: skyblue;
-    }
-    .contact  a{
-        color: white;
-    }
-    .contact  a:hover{
-        color: skyblue;
-    }
+}
+
     
