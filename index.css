@@ -668,10 +668,10 @@ footer .footer-text {
     }
     
     .about {
-        width: 55%;
+        width: 50%;
         box-sizing: border-box;
         float: right;
-        margin-top: 130px;
+        margin-top: 110px;
     }
     
     .about-text {
