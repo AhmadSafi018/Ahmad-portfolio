@@ -653,7 +653,7 @@ footer .footer-text {
     /* About Section */
  
     
-    .about-img {
+  .about-img {
         width: 40%;
         padding-right: 5%;
         box-sizing: border-box;
@@ -671,7 +671,7 @@ footer .footer-text {
         width: 55%;
         box-sizing: border-box;
         float: right;
-        margin-top: 110px;
+        margin-top: 130px;
     }
     
     .about-text {
@@ -783,6 +783,7 @@ footer .footer-text {
             margin: 5px;
         }
     }
+    
     /* .contactSection { 
         margin: 70px 30px ;
     
